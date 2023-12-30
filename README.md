@@ -26,16 +26,14 @@ Alternatively, you can load the configs on the VimEnter event:
 
 ```viml
 let g:plug_config_autoload = 0
-autocmd VimEnter * PlugConfigLoadAll
+autocmd VimEnter * PlugLoadAll
 ```
 
 ## Commands
 
--   `PlugConfigLoad <plug-name>`: Load the config of `<plug-name>`. Use <TAB> to help you complete.
--   `PlugConfigLoadAll`: Load the configs of all plugged plugins. By default, it is executed when `vim-plug-config` is loaded.
--   `PlugConfigEdit <plug-name>`: Edit the config of `<plug-name>`. Use <TAB> to help you complete.
--   `PlugConfigAll`: Show all plugin configs in a single file. It is useful for looking for a certain setting or restore to a single-file config.
--   `PlugConfigClean`: Delete empty config files and the config files for unplugged plugins.
+-   `PlugLoad <plug-name>`: Load the config of `<plug-name>`. Use <TAB> to help you complete.
+-   `PlugLoadAll`: Load the configs of all plugged plugins. By default, it is executed when `vim-plug-config` is loaded.
+-   `PlugConfig <plug-name>`: Edit the config of `<plug-name>`. Use <TAB> to help you complete.
 
 ## Configs
 
@@ -55,11 +53,6 @@ Note: These variables shouldn't be set in the `plug-config` file of `vim-plug-co
 
 -   Default: `edit`
 -   The command used to edit the config file. e.g. `edit`, `split`, `vsplit`.
-
-### `let g:plug_config_all_header`
-
--   Default: `'Configs for plug: {plug}'`
--   The header comment of the config of each plugin shown in `PlugConfigAll`. `{plug}` will be replaced by the name of the plugin.
 
 ## Modifications
 
