@@ -2,6 +2,8 @@
 
 Manage the configs for each vim-plugged plugin in a separate file.
 
+![screenshot](assets/Screenshot.png)
+
 ## Requirements
 
 -   [vim-plug](https://github.com/junegunn/vim-plug)
@@ -28,10 +30,10 @@ autocmd VimEnter * PlugLoadAll
 
 ## Commands
 
--   `PlugLoad <plug-name>`: Load the config of `<plug-name>`. Use <TAB> to help you complete.
+-   `PlugLoad <plug-name>`: Load the config of `<plug-name>`. Use `TAB` to help you complete.
 -   `PlugLoadAll`: Load the configs of all plugged plugins. By default, it is executed when `vim-plug-config` is loaded.
--   `PlugConfig <plug-name>`: Edit the config of `<plug-name>`. Use <TAB> to help you complete.
--   `FZFPlugConfig`: Edit the config of `<plug-name>`. Use <TAB> to help you complete.
+-   `PlugConfig <plug-name>`: Edit the config of `<plug-name>`. Use `TAB` to help you complete.
+-   `FZFPlugConfig`: FZF search `<plug-name>` to edit config file.
 
 ## Configs
 
@@ -51,12 +53,17 @@ Note: These variables shouldn't be set in the `plug-config` file of `vim-plug-co
 -   Default: `tabnew`
 -   The command used to edit the config file. e.g. `edit`, `split`, `vsplit`.
 
-## Credits
+### `g:plug_config_fzf`
 
-This plugin is developed based on [vim-plug-config](https://github.com/ouuan/vim-plug-config), originally created by [Yufan You](https://github.com/ouuan).
+-   Default: `false`
+-   Whether enable fzf integration `:FZFPlugConfig`. [FZF](https://github.com/junegunn/fzf) needed.
 
 ## Modifications
 
 - **Vim9 Only:** This plugin currently supports Vim9, with all Lua and NeoVim-related content removed. If you are a NeoVim user and are looking for versions or alternatives specifically designed for NeoVim, you might be interested in [lazy.nvim](https://github.com/folke/lazy.nvim)
 - **Different:** Add command completion to `PlugConfig` and `PlugLoad`, removed `PlugConfigEditUnderCuror`.
+
+## Credits
+
+This plugin is developed based on [vim-plug-config](https://github.com/ouuan/vim-plug-config), originally created by [Yufan You](https://github.com/ouuan).
 
