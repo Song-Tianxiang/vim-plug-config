@@ -2,7 +2,7 @@
 
 Manage the configs for each vim-plugged plugin in a separate file.
 
-![screenshot](assets/Screenshot.png)
+<img src="assets/Screenshot.png" width=300>
 
 ## Requirements
 
@@ -60,7 +60,7 @@ Note: These variables shouldn't be set in the `plug-config` file of `vim-plug-co
 
 ## Modifications
 
-- **Vim9 Only:** This plugin currently supports Vim9, with all Lua and NeoVim-related content removed. If you are a NeoVim user and are looking for versions or alternatives specifically designed for NeoVim, you might be interested in [lazy.nvim](https://github.com/folke/lazy.nvim)
+- **Vim9 Only:** This plugin currently supports Vim9, with all Lua and NeoVim-related content removed. If you are a NeoVim user, you might be interested in [vim-plug-config](https://github.com/ouuan/vim-plug-config) and [lazy.nvim](https://github.com/folke/lazy.nvim).
 - **Different:** Add command completion to `PlugConfig` and `PlugLoad`, removed `PlugConfigEditUnderCuror`.
 
 ## Credits
