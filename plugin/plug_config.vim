@@ -23,12 +23,12 @@ if !isdirectory(g:plug_config_dir)
 endif
 
 if !exists(":PlugConfig")
-    command -nargs=1 -complete=custom,plugconfig.PluginList
+    command -nargs=1 -complete=custom,plugconfig.PlugList
                 \ PlugConfig plugconfig.EditConfig(<q-args>)
 endif
 
 if !exists(":PlugLoad")
-    command -nargs=1 -complete=custom,plugconfig.PluginList
+    command -nargs=1 -complete=custom,plugconfig.PlugList
                 \ PlugLoad plugconfig.LoadConfig(<q-args>)
 endif
 
@@ -37,7 +37,7 @@ if !exists(":PlugLoadAll")
 endif
 
 if g:plug_config_fzf && !exists(":FZFPlugConfig")
-    command FZFPlugConfig plugconfig.FZFConfig()
+    command FZFPlugConfig plugconfig.FZFPlugConfig()
 endif
 
 if g:plug_config_autoload
