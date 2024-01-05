@@ -11,8 +11,10 @@ def ConfigPath(plug: string): string
     return resolve(g:plug_config_dir .. "/" .. filename)
 enddef
 
+const pluglist = g:plugs_order->deepcopy()->reverse()
+
 def Plugins(): list<string>
-    return g:plugs_order
+    return pluglist
 enddef
 
 export def PlugList(A: string = "", L: string = "", P: number = 0): string
