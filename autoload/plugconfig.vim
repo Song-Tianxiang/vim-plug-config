@@ -8,7 +8,7 @@ def ConfigPath(plug: string): string
         filename = plug .. ".vim"
     endif
         
-    return resolve(g:plug_config_dir .. "/" .. filename)
+    return resolve(expand(g:plug_config_dir) .. "/" .. filename)
 enddef
 
 const pluglist = g:plugs_order->deepcopy()->reverse()
