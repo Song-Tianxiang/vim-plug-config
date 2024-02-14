@@ -18,8 +18,8 @@ extend(g:, {
     plug_config_fzf: false,
 }, 'keep')
 
-if !isdirectory(g:plug_config_dir)
-    mkdir(g:plug_config_dir, "p")
+if !isdirectory(g:plug_config_dir->expand())
+    mkdir(g:plug_config_dir->expand(), "p")
 endif
 
 if !exists(":PlugConfig")
