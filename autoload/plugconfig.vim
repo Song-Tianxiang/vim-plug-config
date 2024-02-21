@@ -1,13 +1,7 @@
 vim9script
 
 def ConfigPath(plug: string): string
-    var filename: string
-    if plug =~ "\.vim$"
-        filename = plug
-    else
-        filename = plug .. ".vim"
-    endif
-        
+    var filename = plug .. ".vim" 
     return resolve(expand(g:plug_config_dir) .. "/" .. filename)
 enddef
 
