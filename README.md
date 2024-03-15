@@ -50,8 +50,8 @@ Note: These variables shouldn't be set in the `plug-config` file of `vim-plug-co
 
 ### `g:plug_config_edit_command`
 
--   Default: `tabnew`
--   The command used to edit the config file. e.g. `edit`, `split`, `vsplit`.
+-   Default: `edit`
+-   The command used to edit the config file. e.g. `edit`, `split`, `vsplit`, `tabnew`.
 
 ### `g:plug_config_fzf`
 

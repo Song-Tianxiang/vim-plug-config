@@ -13,7 +13,7 @@ import autoload "../autoload/plugconfig.vim"
 
 extend(g:, {
     plug_config_autoload: true,
-    plug_config_edit_command: "tabnew",
+    plug_config_edit_command: "edit",
     plug_config_dir: expand("~/.vim/plug-config"),
     plug_config_fzf: false,
 }, 'keep')
