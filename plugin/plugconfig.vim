@@ -9,7 +9,7 @@ if !exists("g:plugs")
     finish
 endif
 
-import autoload "plugconfig.vim"
+import autoload "../autoload/plugconfig.vim"
 
 extend(g:, {
     plug_config_autoload: true,
